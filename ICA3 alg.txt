@@ -1,0 +1,39 @@
+﻿Import scanner 
+
+
+Ask for variables
+* Ask for hill type (int)
+   * Could be easiest to say type 1 for normal, type 2 for large
+   * Error check make sure its one of these options
+* Ask for speed at the end of the ramp (double)
+
+
+Use hill type to find height (int)
+* Normal → 46 meters
+* Large → 70 meters
+Also use hill type to find points per meter (float) and par(int)
+* Store these in a variable
+
+
+Store height in a variable
+
+
+Calculate time in air (double)
+* sqrt((2*height)/9.8)
+
+
+Calculate distance traveled (double)
+* Speed * time in air 
+
+
+Calculate points earned
+* 60 + (distance - par)*points_per_meter
+
+
+Create if statements for print out statement
+* If points >= 61 → “great job”
+* If points < 10 → “what happened”
+* Else → “sorry man”
+
+
+Then print their distance and points
